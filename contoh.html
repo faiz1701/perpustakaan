@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <title>Hello, world!</title>
+    <style>
+      body {
+        background-color: #c9ccd5;
+      }
+      .container {
+        padding-top: 15px;
+      }
+      .hhh {
+        text-shadow: 2px 2px 8px rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow">
+      <a class="navbar-brand">Data Peminjaman Buku</a>
+      <div class="collapse navbar-collapse" id="navbarNav"></div>
+    </nav>
+    <!--navbar  -->
+
+    <div class="container">
+      <!-- list -->
+      <div class="row shadow p-3 mb-5 bg-white rounded">
+        <div class="col-4">
+          <div class="judullist bg-secondary rounded-pill text-center text-white pt-2 pb-2">List Item</div>
+
+          <div class="listkeranjang" id="listkeranjang"></div>
+
+          <a type="button" class="btn btn-primary mt-4 btn-block"   href="#datatable">Masukan Data Peminjam</a>
+        </div>
+
+        <div class="col-8" id="listruang"></div>
+      </div>
+      <!-- listruang -->
+
+      <div class="card container mt-5 mb-5" id="datatable" name="">
+        <div class="card-body">
+          <form>
+          <h6>Nama Peminjam</h6>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Masukan Nama Peminjam"/>
+          </div>
+          <h6>No Hp Peminjam</h6>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingNumber1" placeholder="Masukan No Hp Peminjam"/>
+          </div>
+          <h6>No Id Peminjam</h6>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingNumber2" placeholder="Masukan No Hp ID"/>
+          </div>
+          <h6>Waktu Peminjam Buku</h6>
+          <div class="form-floating mb-3">
+            <input type="date" class="form-control" id="floatingDate1" placeholder="Masukan Waktu Peminjaman" />
+          </div>
+          <h6>Waktu Pemulangan Buku</h6>
+          <div class="form-floating mb-3">
+            <input type="date" class="form-control" id="floatingDate2" placeholder="Masukan Waktu Pemulangan" />
+          </div>
+          </form>
+        </div>
+        <button class="btn btn-primary mt-4 mb-2" onclick="add()">Confirm</button>
+        <br><br><br><br><br><br>
+        <!-- akhir list ruang -->
+
+        <!-- table -->
+        <table class="table mt-3" id="data">
+          <thead>
+            <tr>
+              <th scope="col">NO</th>
+              <th scope="col">Nama Peminjam</th>
+              <th scope="col">No HP Peminjam</th>
+              <th scope="col">No Id Peminjam</th>
+              <th scope="col">Waktu Peminjaman</th>
+              <th scope="col">Waktu Pemulangan</th>
+              <th scope="col">Nama Buku</th>
+              <th scope="col">Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="datatampil">
+            
+          </tbody>
+        </table>
+        <!-- akhir table -->
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+    <script src="contoh.js" defer></script>
+
+    
+  </body>
+</html>
