@@ -8,16 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
-    <title>Hello, world!</title>
+    <title>Data Peminjaman Perpustakaan</title>
     <style>
-      body {
+      body {   
         background-color: #c9ccd5;
       }
       .container {
         padding-top: 15px;
-      }
-      .hhh {
-        text-shadow: 2px 2px 8px rgb(0, 0, 0);
       }
     </style>
   </head>
@@ -25,9 +22,11 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow">
       <a class="navbar-brand">Data Peminjaman Buku</a>
-      <div class="collapse navbar-collapse" id="navbarNav"></div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand" href="history.html">History</a>
+      </div>
     </nav>
-    <!--navbar  -->
+    <!-- akhir navbar  -->
 
     <div class="container">
       <!-- list -->
@@ -42,7 +41,7 @@
 
         <div class="col-8" id="listruang"></div>
       </div>
-      <!-- listruang -->
+      
 
       <div class="card container mt-5 mb-5" id="datatable" name="">
         <div class="card-body">
@@ -71,7 +70,7 @@
         </div>
         <button class="btn btn-primary mt-4 mb-2" onclick="add()">Confirm</button>
         <br><br><br><br><br><br>
-        <!-- akhir list ruang -->
+        
 
         <!-- table -->
         <table class="table mt-3" id="data">
@@ -93,7 +92,6 @@
         </table>
         <!-- akhir table -->
       </div>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

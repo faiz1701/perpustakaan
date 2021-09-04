@@ -119,7 +119,7 @@ function add() {
   var nopinjamnew = document.getElementById("floatingNumber1").value;
   var noidnew = document.getElementById("floatingNumber2").value;
   var waktupinjamnew = document.getElementById("floatingDate1").value;
-  waktupulangnew = document.getElementById("floatingDate2").value;
+  var waktupulangnew = document.getElementById("floatingDate2").value;
 
   namapeminjam.push(namapinjamnew);
   nopeminjam.push(nopinjamnew);
